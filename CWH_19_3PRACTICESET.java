@@ -64,7 +64,18 @@ public class CWH_19_3PRACTICESET {
 //            case 6 -> System.out.println("Saturday");
 //            case 7 -> System.out.println("Sunday");
 //        }
-        //Problem 5
+        //Problem 6
+        Scanner sc = new Scanner(System.in);
+        String website = sc.next();
+        if(website.endsWith(".org")){
+            System.out.println("this is an organizational website");
+        }
+        else if(website.endsWith(".in")){
+            System.out.println("this is an Indian website");
+        }
+        else if(website.endsWith(".com")){
+            System.out.println("this is a commercial website");
+        }
 
     }
 }
