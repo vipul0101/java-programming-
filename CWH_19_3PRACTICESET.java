@@ -65,6 +65,6 @@ public class CWH_19_3PRACTICESET {
 //            case 7 -> System.out.println("Sunday");
 //        }
         //Problem 5
-        
+
     }
 }
