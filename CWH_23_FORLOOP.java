@@ -17,6 +17,6 @@ public class CWH_23_FORLOOP {
         for(int i = n; i>0; i--){
             System.out.println(i);
         }
-        
+
     }
 }
