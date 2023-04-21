@@ -40,6 +40,43 @@ public class CWH_29_PS_6 {
 
 
         //problem 4
-        
+        int [][] mat1 = {{1,2,3},
+                         {4,5,6}};
+        int [][] mat2 = {{3,5,7},
+                         {8,9,4}};
+        int [][]result = {{0,0,0},
+                          {0,0,0}};
+        for(int i=0; i<mat1.length; i++){
+            for(int j=0; j<mat1[i].length; j++){
+
+                result [i][j] = mat1[i][j] + mat2[i][j];
+                System.out.print(result[i][j] + " ");
+            }
+            System.out.println(" ");
+        }
+
+        //problem 5
+        int [] arr = {1,2,4,5,8,9,7};
+        int l = arr.length;
+        int temp;
+        int n = Math.floorDiv(l,2);
+
+        for(int i=0; i<n; i++){
+            temp = arr[i];
+            arr[i] = arr[l-i-1];
+            arr[l-i-1] = temp;
+        }
+        for(int element:arr){
+            System.out.print(element + " ");
+        }
+
+        int [] arr2 = {2,66,4,58,987,8,5,445,564,202};
+        int max = 0;
+        for(int e:arr2){
+            if(e>max){
+                max = e;
+            }
+        }
+        System.out.println("the new max value from the given array is :- " + max);
     }
 }
