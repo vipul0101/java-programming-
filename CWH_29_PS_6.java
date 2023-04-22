@@ -97,8 +97,9 @@ public class CWH_29_PS_6 {
         boolean isSorted = true;
         int [] arr2 = {2, 3, 4, 5, 7, 8, 45, 64, 202};
         for(int i=0; i<arr2.length-1; i++){
-            if(arr2[i]>arr2[i+1]){
+            if (arr2[i] > arr2[i + 1]) {
                 isSorted = false;
+                break;
             }
         }
         if(isSorted){
