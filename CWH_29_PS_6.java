@@ -2,6 +2,7 @@ package com.company;
 
 public class CWH_29_PS_6 {
     public static void main(String[] args) {
+        /*
         //problem 1
         float [] marks = {49.8f, 55.5f, 66.3f, 58.9f, 45.4f};
         float sum = 0;
@@ -70,13 +71,41 @@ public class CWH_29_PS_6 {
             System.out.print(element + " ");
         }
 
-        int [] arr2 = {2,66,4,58,987,8,5,445,564,202};
-        int max = 0;
+        //problem 6
+        int [] arr2 = {2, 66, 4, 58, -987, 8, 5, 445, 564, 202};
+        int max = Integer.MIN_VALUE;
         for(int e:arr2){
             if(e>max){
                 max = e;
             }
         }
         System.out.println("the new max value from the given array is :- " + max);
+
+
+        //problem 7
+        int [] arr2 = {2, 66, 4, 58, 987, -8, 5, 445, 564, 202};
+        int min = Integer.MAX_VALUE;
+        for(int e:arr2){
+            if(e<min){
+                min = e;
+            }
+        }
+        System.out.println("the new max value from the given array is :- " + min);
+        */
+
+        //problem 8
+        boolean isSorted = true;
+        int [] arr2 = {2, 3, 4, 5, 7, 8, 45, 64, 202};
+        for(int i=0; i<arr2.length-1; i++){
+            if(arr2[i]>arr2[i+1]){
+                isSorted = false;
+            }
+        }
+        if(isSorted){
+            System.out.println("the Array is Sorted");
+        }
+        else{
+            System.out.println("The Array is not Sorted");
+        }
     }
 }
