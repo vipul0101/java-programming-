@@ -18,6 +18,7 @@ public class CWH_35_Practice_set_on_methods {
         }
     }
 
+    //problem 4
     static int fib(int d){
         if(d==1 || d==2){
             return d-1;
@@ -34,8 +35,19 @@ public class CWH_35_Practice_set_on_methods {
         }
         return x + sumRec(x-1);
     }
-    public static void main(String[] args) {
 
+    //problem 8
+    static void pattern1_rec(int n){
+        if(n>0){
+            pattern1_rec(n-1);
+            for(int i = 0; i<n; i++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+/*
         //problem 1
         multiplication(5);
 
@@ -49,5 +61,8 @@ public class CWH_35_Practice_set_on_methods {
         //problem 4
         int result = fib(5);
         System.out.println(result);
+*/
+        //problem 8
+        pattern1_rec(4);
     }
 }
