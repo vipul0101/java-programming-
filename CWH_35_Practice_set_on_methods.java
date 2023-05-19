@@ -8,13 +8,22 @@ public class CWH_35_Practice_set_on_methods {
         }
     }
 
-    //problrm 2
+    //problem 2
     static void pattern1(int n){
-        for(int i=0; i<n; i++){
-            for(int j=0; j<i+1; j++){
+        for(int i=1; i<=n; i++){
+            for(int j=0; j<i; j++){
                 System.out.print("* ");
             }
             System.out.println();
+        }
+    }
+
+    static int fib(int d){
+        if(d==1 || d==2){
+            return d-1;
+        }
+        else{
+            return fib(d-1) + fib(d-2);
         }
     }
 
@@ -36,5 +45,9 @@ public class CWH_35_Practice_set_on_methods {
         //problem 3
         int c = sumRec(5);
         System.out.println(c);
+
+        //problem 4
+        int result = fib(5);
+        System.out.println(result);
     }
 }
