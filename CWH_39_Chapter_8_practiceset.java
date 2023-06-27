@@ -42,10 +42,33 @@ class square{
     }
                                                                             }
 
+                                                                            //problem4
+class rectangle{
+    int length;
+    int breadth;
+    public int area(){
+        return length*breadth;
+    }
+    public int perimeter(){
+        return 2*(length+breadth);
+    }
+                                                                            }
+                                                                            //problem5
+class tommy{
+    public void hit(){
+        System.out.println("Hitting the enemy");
+    }
+    public void run(){
+        System.out.println("Running from the enemy");
+    }
+    public void fire(){
+        System.out.println("firing on the enemy");
+    }
+                                                                            }
 
 public class CWH_39_Chapter_8_practiceset {
     public static void main(String[] args) {
-                                                                            //problem1
+        /*                                                                    //problem1
         Employee harry = new Employee();
         harry.salary = 55000;
         harry.name = "Pihu kumari";
@@ -69,5 +92,22 @@ public class CWH_39_Chapter_8_practiceset {
         sq.side = 5;
         System.out.println(sq.area());
         System.out.println(sq.perimeter());
+
+                                                                            //problem4
+        System.out.println(" ");
+        rectangle rec = new rectangle();
+        rec.length = 24;
+        rec.breadth = 55;
+        System.out.println(rec.area());
+        System.out.println(rec.perimeter());
+        */
+
+                                                                            //problem5
+        System.out.println(" ");
+        tommy player1 = new tommy();
+        player1.hit();
+        player1.run();
+        player1.fire();
+
     }
 }
