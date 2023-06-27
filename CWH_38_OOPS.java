@@ -9,6 +9,7 @@ class Employees{
     public void printDetails(){
         System.out.println("My id is :- " + id);
         System.out.println("My name is :- " + name);
+        System.out.println(name + "'s salary is :- " + salary + "k");
     }
     public int getsalary(){
         return salary;
@@ -36,8 +37,8 @@ public class CWH_38_OOPS {
         System.out.println(" ");
         System.out.println("printing details of harry");
         harry.printDetails();
-        int salary2 = harry.getsalary();
-        System.out.println(salary2);
+//        int salary2 = harry.getsalary();
+//        System.out.println(salary2);
         //printing the attributes for john
         System.out.println(" ");
         System.out.println("printing details of john");
