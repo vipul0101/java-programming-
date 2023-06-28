@@ -1,6 +1,6 @@
 package com.company;
 
-class employee{
+class Employee1{
     private int id;
     private String name;
 
@@ -21,7 +21,7 @@ public class CWH_40_ACCESSMODIFIER {
 
     public static void main(String[] args) {
 
-        employee harry = new employee();
+        Employee1 harry = new Employee1();
         harry.setname("codewithharry");
         System.out.println(harry.getname());
         harry.setId(22);
